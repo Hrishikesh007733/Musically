@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Music Store</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="dark_mode.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="scripts1.js" async></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="font-weight-bold font-italic text-danger p-3 mb-2 bg-warning text-dark">NEW RELEASES</h3><br>
+                    <h5 class="font-italic text-success">Click the images to play and stop before the next song</h5>
+                    
+                    <div class="home"> 
+                        <a class="btn btn-dark btn-outline-info btn-lg" href="home.html" role="button">HOME</a>  
+                    </div>
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <div class="ball"></div>
+                    </label>
+                    <!--this is for toggling               
+                    <div class="dark">
+                     <button type="button" class="btn btn-dark" onclick="darkMode()">darkmode</button>
+                    </div>--> 
+                    <!-------->
+                </div>
+                <div class="col-md-3">
+                    <img src="images/kgf.jpg" alt="" class="album-poster" id="13">
+                    <h4>KGF</h4>
+                    <p>Vijay Prakash - 2018</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/nee.jpeg" alt="" class="album-poster" id="14">
+                    <h4>Nee Sigovaregu</h4>
+                    <p>Sid Sriram - 2021</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/patashala.jpg" alt="" class="album-poster" id="15">
+                    <h4>Patashala</h4>
+                    <p>Vijay Prakash - 2021</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/kirik.jpg" alt="" class="album-poster" id="16">
+                    <h4>Belegeddu</h4>
+                    <p>Vijay Prakash - 2016</p>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="images/memo.jpeg" alt="" class="album-poster" id="1">
+                    <h4>Memories</h4>
+                    <p>Maroon 5 - 2021</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/venom.jpeg" alt="" class="album-poster" id="2">
+                    <h4>Venom</h4>
+                    <p>Eminem - 2018</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/kithay.jpeg" alt="not there" class="album-poster" id="3">
+                    <h4>Kithe Chaliye</h4>
+                    <p>Funky Dholis - 2011</p>
+                </div>
+                
+                <div class="col-md-3">
+                    <img src="images/daru.jpg" alt="" class="album-poster" id="4">
+                    <h4>Daru Desi</h4>
+                    <p>Benny Dayal - 2012</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/makhana.jpg" alt="" class="album-poster" id="10">
+                    <h4>Makhna</h4>
+                    <p>Tanishk Bagchi,Asees Kaur - 2019</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/sooraj.jpg" alt="" class="album-poster" id="6">
+                    <h4>Sooraj Dooba Hain</h4>
+                    <p>Arijit Singh - 2015</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/peaches.jpeg" alt=""  class="album-poster" id="7">
+                    <h4>Peaches</h4>
+                    <p>Justin Bieber - 2021</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/see_you.jpg" alt="" class="album-poster" id="8">
+                    <h4>See You Again</h4>
+                    <p>Wiz Khalifa - 2015</p>
+                </div>
+                
+                <div class="col-md-3">
+                    <img src="images/Buddhu-Sa-Mann.jpg" alt="" class="album-poster" id="9">
+                    <h4>Buddhu Sa Mann</h4>
+                    <p>Armaan Malik - 2016</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/zoo.jpg" alt="" class="album-poster" id="5">
+                    <h4>Zoobi Doobi</h4>
+                    <p>Sonu Nigam - 2019</p>
+                </div>                
+                <div class="col-md-3">
+                    <img src="images/levi.jpeg" alt="" class="album-poster"  id="12">
+                    <h4>Levitating</h4>
+                    <p>Dua Lipa - 2020</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/khandala.jpg" alt="" class="album-poster"  id="11">
+                    <h4>Aati Kya Khandala</h4>
+                    <p>Alka Yagnik - 1998</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <audio id="s1">
+            <source src="songs/memories.mpeg" type="audio/mp3">
+        </audio>
+        <audio id="s2">
+            <source src="songs/VENOM - RINGTONE.mp3" type="audio/mp3">
+        </audio>
+        <audio id="s3">
+            <source src="songs/kithay_chaliya.mpeg" type="audio/mp3">
+        </audio>
+        
+        <audio id="s4">
+            <source src="songs/daru_desi.mpeg" type="audio/mp3">
+        </audio>
+        <audio id="s5">
+            <source src="songs/zoo_bi.mpeg" type="audio/mp3">
+        </audio>
+        <audio id="s6">
+            <source src="songs/suraj_duba.mpeg" type="audio/mp3">
+        </audio>
+        <audio id="s7">
+            <source src="songs/peaches.mpeg" type="audio/mp3">
+        </audio>
+        <audio id="s8">
+            <source src="songs/Wiz-Khalifa-See-You-Againgospelfulcom.mp3" type="audio/mp3">
+        </audio>
+        <audio id="s9">
+            <source src="songs/budhu sa man.mpeg" type="audio/mp3">
+        </audio>
+        <audio id="s10">
+            <source src="songs/makahan.mpeg" type="audio/mp3">
+        </audio>
+        <audio id="s11">
+            <source src="songs/khandala.mpeg" type="audio/mp3">
+        </audio>
+        <audio id="s12">
+            <source src="songs/levitating.mpeg" type="audio/mp3">
+        </audio>
+
+        <audio id="s13">
+            <source src="songs/Salaam Rocky Bhai - KGF 128 Kbps.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="s14">
+            <source src="songs/[iSongs.info] 04 - Nee Sigoovaregu.mp3" type="audio/mp3">
+        </audio>
+        <audio id="s15">
+            <source src="songs/Paatashaala-Naasongs.Net.mp3" type="audio/mp3">
+        </audio>
+        <audio id="s16">
+            <source src="songs/Belegedu(KannadaMaza.In).mp3" type="audio/mp3">
+        </audio>
+    
+    </body>
+</html>

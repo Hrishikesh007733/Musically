@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*generic selector*/
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;/* ele is displayed from its normal position */
+    background-image: url('images/dp4.jpg');
+    background-size: cover;
+}
+.container .inner{
+    position: absolute;/* for a particular area and move with the page scroll  */
+    width: 100%;
+    background-color: #0009;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-bottom: 4px solid #fff;
+    border-top: 4px solid #fff;
+
+}
+.text{
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.button {
+    background-color: #4CAF50;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+  }
